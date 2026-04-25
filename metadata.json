@@ -1,0 +1,6 @@
+{
+  "name": "PIVINDU Ultimate AI",
+  "description": "A powerful personal assistant supporting 1000+ languages, vision analysis, text-to-speech, image/music generation, and Arduino coding.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": []
+}
