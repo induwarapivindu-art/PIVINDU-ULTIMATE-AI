@@ -1,20 +1,24 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+import streamlit as st
 
-# Run and deploy your AI Studio app
+# ඔයාගේ ලෝගෝ එක පේන්න නම් මේ ලින්ක් එක හරියටම තියෙන්න ඕනේ
+LOGO_URL = "https://raw.githubusercontent.com/induwarapivindu-art/PIVINDU-ULTIMATE-AI/main/1000137821.png"
 
-This contains everything you need to run your app locally.
+st.set_page_config(page_title="PIVINDU ULTIMATE AI", layout="centered")
 
-View your app in AI Studio: https://ai.studio/apps/c52342f4-384d-441f-b714-554ca2a46c83
+# CSS for Neon Blue UI (No Black Text)
+st.markdown(f"""
+    <style>
+    .stApp {{ background-color: #FFFFFF; }}
+    .p-logo {{ display: block; margin: auto; width: 120px; border-radius: 50%; filter: drop-shadow(0 0 15px #00F2FF); }}
+    .p-title {{ font-size: 3rem; font-weight: 900; text-align: center; color: #004080; }}
+    .p-subtitle {{ font-size: 3.5rem; font-weight: 900; text-align: center; color: #00F2FF; margin-top: -25px; }}
+    </style>
+    """, unsafe_allow_html=True)
 
-## Run Locally
+# Login UI
+st.markdown(f'<img src="{LOGO_URL}" class="p-logo">', unsafe_allow_html=True)
+st.markdown('<p class="p-title">PIVINDU</p>', unsafe_allow_html=True)
+st.markdown('<p class="p-subtitle">ULTIMATE AI</p>', unsafe_allow_html=True)
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+if st.button("CONTINUE WITH GOOGLE"):
+    st.success("System core linked successfully!")
